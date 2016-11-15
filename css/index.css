@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Rancho";
+    src: url("../fonts/Rancho.ttf");
+}
+
+/* reset setting */
+html {
+    height: 100%;
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; /* при указании внутренних padding - ширина не учитывается */
+}
+
+a:hover {text-decoration: none;}
+a:active,
+a:hover {outline:0;}
+
+img {border: none;}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {clear: both;}
+
+.left {float: left;}
+.right {float: right;}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.44);
+    border-bottom: none;
+}
+.navbar-brand {
+    padding: 6px;
+}
+.navbar-default .navbar-brand {
+    color: #f4f6ad;
+    font: 28px 'Rancho', cursive;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover{
+    color: white;
+    transition: all .5s;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #c8ca87;
+}
+.links-left {
+    position: relative;
+    left: 10%;
+}
+
+/* Collapse */
+.navbar-default .navbar-toggle {
+    border-color: #f4f6ad;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgba(255, 255, 140, 0.11);
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f4f6ad;
+}
+
+
+/* Header */
+.intro-header {
+    text-align: center;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+.intro-message {
+    position: relative;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    font-family: 'Rancho', cursive;
+}
+.intro-message > h1 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
+    font-size: 7em;
+}
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
+    font-size: 3em;
+}
+
+
+/* @media */
+/* Lg devices, wide screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* M devices, Desctops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Sm devices, tablets */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Xs devices, phones */
+@media only screen and (max-width: 480px) {
+
+}
