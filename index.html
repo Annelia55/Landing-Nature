@@ -24,11 +24,12 @@
 <body>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top = фиксирует navbar сверху страницы -->
+    <nav class="navbar navbar-default navbar-fixed-top"> <!-- fixed-top = прокручивается | static-top = остается вверху страницы  -->
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -41,39 +42,113 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav links-left">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#category">Categories</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Categories<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#category_1">Category-1</a></li>
+                            <li><a href="#category_2">Category-2</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contacts</a></li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
 <!-- Header -->
-<a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
+    <a name="about"></a>
+        <div class="intro-header">
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Landing page</h1>
-                        <h3>based on Bootstrap </h3>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Landing page</h1>
+                            <h3>based on Bootstrap </h3>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div><!-- /.container -->
-    </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.header -->
 
 <!-- Category -->
-<a name="category"></a>
+    <a name="category_1"></a>
+        <div class="category-1">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, metus at iaculis gravida, metus metus mattis mi, vitae tincidunt augue eros sit amet eros. Integer fermentum sapien ac vestibulum tristique. Sed condimentum pellentesque magna, sed iaculis tortor ultrices ac. Sed facilisis lorem id semper fermentum. Donec in mauris venenatis, semper felis in, condimentum ipsum. Fusce rutrum, augue quis consequat fringilla, ex tellus placerat libero, a viverra ipsum nisi id mauris. Aliquam non metus eget justo auctor venenatis vitae sit amet nibh. Maecenas cursus nulla vel mattis mollis.
+
+                            Curabitur augue sapien, accumsan eget ullamcorper nec, ultricies vel felis. Nam at nibh sit amet odio facilisis ornare interdum quis ex. Suspendisse velit felis, eleifend eget risus in, sollicitudin tincidunt mi. Duis hendrerit metus eget diam aliquam, in convallis felis dapibus. Vestibulum nec faucibus leo, ac viverra augue. Curabitur at volutpat augue. Proin pretium fringilla ligula, eu sagittis risus elementum nec. Vivamus sed semper ligula. Sed luctus quam vitae orci lacinia, et mollis velit posuere.
+
+                            Fusce rhoncus, sapien non convallis tempor, lacus nunc mattis neque, ac dapibus lacus ante sit amet nibh. Fusce sed ultricies nunc. Aliquam at elit nec leo semper dictum. Vestibulum mollis cursus diam non pellentesque. Sed quis lobortis risus. Fusce lacinia, felis id sagittis volutpat, mauris ipsum dictum augue, in vulputate urna metus eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+                            Sed sed lorem eget nunc ornare convallis. Pellentesque ullamcorper lacus id ultrices interdum. In hac habitasse platea dictumst. Aenean quis est eget ipsum accumsan viverra. Sed mi augue, lobortis rhoncus volutpat vitae, placerat vitae libero. Duis varius pretium lobortis. Vestibulum placerat, nibh non porttitor dignissim, lacus lorem efficitur ligula, et tempus nunc justo pellentesque enim. Nam gravida, mi sit amet vulputate interdum, mi libero egestas ante, sit amet sodales orci ante ut leo. Donec in lectus id mauris egestas rhoncus. Nam auctor at lectus eget porttitor. Donec elementum varius nunc, vitae elementum sapien. Etiam est ipsum, vestibulum eu pretium quis, malesuada vitae est. Nulla semper suscipit neque, et elementum sem tincidunt in. Vivamus sagittis porttitor massa id iaculis.
+
+                            Cras dapibus ut ante sit amet congue. Vivamus vitae felis felis. Vivamus porttitor nunc tellus, feugiat convallis nisi accumsan ac. Nam ac elit dapibus, tempor arcu nec, condimentum ligula. Cras lobortis ultricies maximus. Pellentesque quis tortor euismod, lobortis turpis in, tristique quam. Etiam sapien turpis, ullamcorper nec venenatis ac, tempus pellentesque tortor. Quisque a arcu sit amet enim elementum fermentum laoreet sed magna. Sed id lacinia tellus. Phasellus vestibulum lacinia lectus. Maecenas ornare enim at dictum luctus. Nullam sed orci non enim pulvinar rutrum et tincidunt nunc. Maecenas magna ante, pulvinar nec consectetur ut, dignissim ac sapien. Quisque pulvinar augue urna, at ornare orci tempor eget. Integer ut felis arcu. Pellentesque laoreet, dui fringilla scelerisque pulvinar, orci leo eleifend mauris, a malesuada est ante sit amet nisi.
+
+                            Etiam sit amet consequat dui, pretium hendrerit massa. Donec iaculis magna vel augue efficitur faucibus. Suspendisse rutrum urna nec accumsan sollicitudin. Vestibulum interdum mollis finibus. Sed euismod vulputate massa sit amet cursus. Nunc massa mi, fermentum nec arcu eget, venenatis viverra nulla. Proin ac erat magna. Duis nisl enim, placerat quis metus id, porta facilisis diam. Mauris maximus pulvinar diam luctus consectetur. Fusce ac semper nisl. Donec accumsan aliquet nulla, ac pellentesque nunc porta id. Aliquam hendrerit sem quis nunc elementum ultricies. Duis sem ipsum, vulputate feugiat felis non, feugiat maximus turpis. Pellentesque enim nibh, aliquet sed ornare ut, viverra interdum mi. Integer urna tortor, posuere consectetur condimentum non, pharetra quis tortor. Morbi egestas enim eros, vitae porttitor mauris convallis at.
+
+                            Cras id urna fringilla nulla vestibulum venenatis. Morbi vitae blandit purus, nec gravida lacus. Maecenas nec ultricies felis. Proin volutpat fringilla sem nec elementum. Suspendisse ut hendrerit magna, nec bibendum ex. Suspendisse nec rhoncus mauris. Curabitur laoreet purus purus, non vestibulum dolor accumsan ut. Aenean ut lorem non tortor ullamcorper pellentesque.
+
+                            Fusce pharetra lacus dolor, eu consectetur urna venenatis sit amet. Cras tincidunt sem ut venenatis euismod. Ut ut nulla quis sem tempor porttitor. Suspendisse in nulla vitae sem hendrerit elementum vitae ut sapien. Etiam dapibus blandit gravida. Suspendisse ultricies sapien id tempus faucibus. Fusce dapibus non quam sit amet scelerisque.
+
+                            Suspendisse tempor lacus non velit euismod pulvinar. Etiam ante diam, gravida ac sollicitudin eget, fringilla a nibh. Fusce vitae velit pellentesque nibh auctor vehicula. Nullam in turpis non nulla posuere egestas sit amet sit amet nulla. Nullam tincidunt commodo sem id accumsan. Pellentesque aliquam lacus eget ipsum dapibus blandit. Etiam commodo, nunc id molestie commodo, urna ante rutrum diam, non rhoncus velit metus vel quam. Maecenas sed bibendum est. Curabitur a consectetur felis. Proin hendrerit urna et orci finibus volutpat. Sed ut quam sollicitudin purus sollicitudin pretium eget ac est. Fusce dapibus, lectus sed aliquet venenatis, lorem lacus facilisis urna, ut scelerisque tellus nisl eget massa. Curabitur eu sem vulputate elit viverra mattis nec vitae lorem. Etiam in dui nec odio varius tempor. Vestibulum ex magna, tempus eget aliquet vel, feugiat non libero.
+
+                            Nulla aliquam congue erat, sit amet ornare urna. Nullam porta luctus augue nec congue. Vestibulum egestas orci orci, sed rhoncus risus semper nec. Etiam ut justo eleifend, euismod nulla sed, mattis risus. Nam et lacus semper, rutrum risus sed, tristique ligula. In vitae justo congue, dignissim elit maximus, tincidunt arcu. Donec suscipit sem mi, ac ultricies tortor ornare eget. In eget sollicitudin nunc.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.category-1 -->
+
+<a name="category_2"></a>
+        <div class="category-2">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.category-2 -->
+
+    <a name="category_3"></a>
+        <div class="category-3">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.category-1 -->
 
 
     <!-- jQuery -->
     <script src="js/jquery-3.1.1.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="js/index.js"></script>

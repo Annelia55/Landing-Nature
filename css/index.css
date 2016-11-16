@@ -22,6 +22,7 @@ body {
             box-sizing: border-box; /* при указании внутренних padding - ширина не учитывается */
 }
 
+a {cursor: pointer;}
 a:hover {text-decoration: none;}
 a:active,
 a:hover {outline:0;}
@@ -38,7 +39,7 @@ img {border: none;}
 .left {float: left;}
 .right {float: right;}
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
     background: rgba(0, 0, 0, 0.44);
     border-bottom: none;
@@ -64,6 +65,24 @@ img {border: none;}
     left: 10%;
 }
 
+/* Dropdown menu */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #c8ca87;
+    background: rgba(0, 0, 0, 0.24);
+}
+.dropdown-menu {
+    border: none;
+    background: rgba(0, 0, 0, 0.25);
+}
+.dropdown-menu>li>a {
+    color: #c8ca87;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background: rgba(0, 0, 0, 0.11);
+    transition: all .8s;
+    color: #c8ca87;
+}
+
 /* Collapse */
 .navbar-default .navbar-toggle {
     border-color: #f4f6ad;
@@ -77,12 +96,13 @@ img {border: none;}
 }
 
 
-/* Header */
+/* HEADER */
 .intro-header {
     text-align: center;
+    color: white;
     background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
-    color: white;
+    background-attachment: fixed; /* при прокрутке страницы картинка фона (intro-bg) остается на месте*/
 }
 .intro-message {
     position: relative;
@@ -90,13 +110,18 @@ img {border: none;}
     padding-top: 20%;
     font-family: 'Rancho', cursive;
 }
-.intro-message > h1 {
+.intro-message h1 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
     font-size: 7em;
 }
-.intro-message > h3 {
+.intro-message h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
     font-size: 3em;
+}
+
+/* CATEGORY */
+.category-1 {
+    margin: 50px;
 }
 
 
