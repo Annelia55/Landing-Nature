@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Rancho";
+    font-family: 'Rancho';
     src: url("../fonts/Rancho.ttf");
 }
 
@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     background: white;
+    position: relative;
 }
 * {
     margin: 0;
@@ -19,9 +20,8 @@ body {
     outline: none;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
-            box-sizing: border-box; /* при указании внутренних padding - ширина не учитывается */
+            box-sizing: border-box;     /* при указании внутренних padding - ширина не учитывается */
 }
-
 a {cursor: pointer;}
 a:hover {text-decoration: none;}
 a:active,
@@ -38,6 +38,8 @@ img {border: none;}
 
 .left {float: left;}
 .right {float: right;}
+
+
 
 /* NAVBAR */
 .navbar {
@@ -64,23 +66,36 @@ img {border: none;}
     position: relative;
     left: 10%;
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: rgba(244, 246, 173, 0.56);    /* изменение цвета scroll spy */
+}
 
 /* Dropdown menu */
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #c8ca87;
-    background: rgba(0, 0, 0, 0.24);
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #c8ca87;                  /* цвет ссылки при появлении выпадающего меню меню */
+    background: rgba(0, 0, 0, 0.43); /* подсветка ссылок при наведении в выпадающем меню */
 }
 .dropdown-menu {
     border: none;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.31);   /* background в выпадающем меню */
 }
-.dropdown-menu>li>a {
+.dropdown-menu > li > a {
     color: #c8ca87;
 }
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+.dropdown-menu>li>a:focus, .dropdown-menu >li>a:hover {
     background: rgba(0, 0, 0, 0.11);
     transition: all .8s;
     color: #c8ca87;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: black;
+    background-color: rgba(244, 246, 173, 0.56);    /* изменение цвета scroll spy в выпадающем меню */
 }
 
 /* Collapse */
@@ -95,33 +110,39 @@ img {border: none;}
     background-color: #f4f6ad;
 }
 
+/* CAROUSEL */
+.carousel-caption {
+    font-family: 'Rancho', cursive;
+    padding-bottom: 15%;
+}
+.carousel-caption h1 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
+    font-size: 7em;
+}
+.carousel-caption h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
+    font-size: 4em;
+}
 
-/* HEADER */
+
+/* CATEGORY */
+.container > .row {
+    margin-top: 50px;
+}
+
+/* Scrolling_area */
 .intro-header {
     text-align: center;
     color: white;
     background: url(../img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* при прокрутке страницы картинка фона (intro-bg) остается на месте*/
+    background-attachment: fixed;   /* при прокрутке страницы картинка фона (intro-bg) остается на месте*/
 }
 .intro-message {
     position: relative;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    font-family: 'Rancho', cursive;
-}
-.intro-message h1 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
-    font-size: 7em;
-}
-.intro-message h3 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
-    font-size: 3em;
-}
+    padding-bottom: 15%;
+    padding-top: 15%;
 
-/* CATEGORY */
-.category-1 {
-    margin: 50px;
 }
 
 
@@ -145,3 +166,4 @@ img {border: none;}
 @media only screen and (max-width: 480px) {
 
 }
+
