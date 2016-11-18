@@ -11,16 +11,17 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: white;
+    background: #000;
     position: relative;
+    color: #dddddd;
 }
 * {
     margin: 0;
     padding: 0;
     outline: none;
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;     /* при указании внутренних padding - ширина не учитывается */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;     /* при указании внутренних padding - ширина не учитывается */
 }
 a {cursor: pointer;}
 a:hover {text-decoration: none;}
@@ -43,24 +44,23 @@ img {border: none;}
 
 /* NAVBAR */
 .navbar {
-    background: rgba(0, 0, 0, 0.44);
+    background: rgb(0, 0, 0);
     border-bottom: none;
 }
-.navbar-brand {
-    padding: 6px;
-}
 .navbar-default .navbar-brand {
-    color: #f4f6ad;
+    padding: 6px;
     font: 28px 'Rancho', cursive;
+    color: #f3f4d2;
+    text-shadow: 2px 2px 3px rgb(240, 242, 37);
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav > li > a:hover{
-    color: white;
+    color: #fffffe;
     transition: all .5s;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #c8ca87;
+    color: #f1ebb6;
 }
 .links-left {
     position: relative;
@@ -69,80 +69,96 @@ img {border: none;}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: rgba(244, 246, 173, 0.56);    /* изменение цвета scroll spy */
+    color: #f1ebb6;
+    background: rgba(244, 244, 244, 0.16);    /* изменение цвета scroll spy */
 }
 
 /* Dropdown menu */
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
-    color: #c8ca87;                  /* цвет ссылки при появлении выпадающего меню меню */
-    background: rgba(0, 0, 0, 0.43); /* подсветка ссылок при наведении в выпадающем меню */
+    color: #f1ebb6;                  /* цвет ссылки при появлении выпадающего меню меню */
+    background: rgba(244, 244, 244, 0.16); /* подсветка ссылки, содержащей выпадающее меню */
 }
-.dropdown-menu {
+.navbar-nav > li > .dropdown-menu {
     border: none;
-    background: rgba(0, 0, 0, 0.31);   /* background в выпадающем меню */
+    background-color: rgb(29, 29, 29);
 }
 .dropdown-menu > li > a {
-    color: #c8ca87;
+    color: #a6a179;
 }
-.dropdown-menu>li>a:focus, .dropdown-menu >li>a:hover {
-    background: rgba(0, 0, 0, 0.11);
+.dropdown-menu>li>a:focus,
+.dropdown-menu >li>a:hover {
+    color: #f1ebb6;
+    background: rgba(244, 244, 244, 0.16);
     transition: all .8s;
-    color: #c8ca87;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: black;
-    background-color: rgba(244, 246, 173, 0.56);    /* изменение цвета scroll spy в выпадающем меню */
+    color: #f1ebb6;
+    background-color: rgba(244, 244, 244, 0.16);    /* изменение цвета scroll spy в выпадающем меню */
 }
+
 
 /* Collapse */
 .navbar-default .navbar-toggle {
-    border-color: #f4f6ad;
+    border-color: #f1ebb6;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: rgba(255, 255, 140, 0.11);
+    background-color: rgba(244, 244, 244, 0.16);
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #f4f6ad;
+    background-color: #f1ebb6;
 }
+
+
+/* HEADER */
+.intro-header {
+    text-align: center;
+    color: #f2f2f2;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* при прокрутке страницы картинка фона (intro-bg) остается на месте*/
+}
+.intro-message {
+    position: relative;
+    font-family: 'Rancho', cursive;
+    padding-bottom: 22.5%;
+    padding-top: 22.5%;
+    text-shadow: 2px 2px 3px rgb(229, 185, 76);
+}
+.intro-message h1 {
+    font-size: 8em;
+}
+.intro-message h3 {
+    font-size: 3em;
+}
+
 
 /* CAROUSEL */
+.carousel-inner > .item > img {
+    height: 550px;
+}
 .carousel-caption {
     font-family: 'Rancho', cursive;
-    padding-bottom: 15%;
-}
-.carousel-caption h1 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
-    font-size: 7em;
 }
-.carousel-caption h3 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.54);
+.carousel-caption h2 {
     font-size: 4em;
 }
-
+.carousel-caption p {
+    font-size: 2em;
+}
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before{
+    color: rgb(156, 152, 153);  /* цвет стрелочек */
+}
 
 /* CATEGORY */
 .container > .row {
     margin-top: 50px;
-}
-
-/* Scrolling_area */
-.intro-header {
-    text-align: center;
-    color: white;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;   /* при прокрутке страницы картинка фона (intro-bg) остается на месте*/
-}
-.intro-message {
-    position: relative;
-    padding-bottom: 15%;
-    padding-top: 15%;
-
 }
 
 
@@ -159,7 +175,19 @@ img {border: none;}
 
 /* Sm devices, tablets */
 @media only screen and (max-width: 767px) {
-
+    /* Collapse */
+    .navbar-default .navbar-brand:focus,
+    .navbar-default .navbar-nav > li > a:hover {
+        background-color: rgba(244, 244, 244, 0.16);
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+        color: #a6a179;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #f1ebb6;
+        background-color: rgba(244, 244, 244, 0.16);
+    }
 }
 
 /* Xs devices, phones */
