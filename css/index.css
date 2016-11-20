@@ -160,6 +160,31 @@ img {border: none;}
 .container > .row {
     margin-top: 50px;
 }
+.category-1 {
+    text-align: justify;
+}
+
+/* Spoiler */
+a.spoiler:after {
+    content: " [-]";
+}
+a.spoiler.collapsed:after {
+    content: " [+]";
+}
+.well {
+    background: rgba(157, 157, 157, 0.16);
+    border: none;
+}
+.btn-default,
+.btn-default:focus {
+    color: #dddddd;
+    background-color: rgba(136, 136, 136, 0.24);
+    border: none;
+}
+.btn-default:hover {
+    color: #dddddd;
+    background-color: rgba(157, 157, 157, 0.16);
+}
 
 
 /* @media */
