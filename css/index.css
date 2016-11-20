@@ -13,7 +13,7 @@ body {
     padding: 0;
     background: #000;
     position: relative;
-    color: #dddddd;
+    color: #cbcbcb;
 }
 * {
     margin: 0;
@@ -184,6 +184,27 @@ a.spoiler.collapsed:after {
 .btn-default:hover {
     color: #dddddd;
     background-color: rgba(157, 157, 157, 0.16);
+}
+
+/* Modal window */
+.m-window {
+    float:right;
+    margin-bottom: 20px;
+}
+button.close {
+    color: #FFFFFF;
+    text-shadow: none;
+}
+button.close:hover {
+    color: #FFFFFF;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+    background: rgb(26, 26, 26);
+}
+.modal-header {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.25);
 }
 
 
