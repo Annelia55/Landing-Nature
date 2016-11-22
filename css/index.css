@@ -156,20 +156,74 @@ img {border: none;}
     color: rgb(156, 152, 153);  /* цвет стрелочек */
 }
 
-/* CATEGORY */
+/* Gallery */
+.nav-tabs > li > a,
+.nav-tabs .dropdown-menu>li>a {
+    color: #cbcbcb;
+}
+.nav-tabs > li > a:hover {
+    color: #f1ebb6;
+    background: rgba(244, 244, 244, 0.16);
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #f1ebb6;
+    background-color: #000000;
+}
+.nav .open > a,          /* настройка dropdown*/
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background: rgba(244, 244, 244, 0.16);
+}
+.nav-tabs .dropdown-menu {
+    background: rgba(244, 244, 244, 0.16);
+}
+.nav-tabs .dropdown-menu>li>a:focus,
+.dropdown-menu >li>a:hover {
+    color: #f1ebb6;
+}
+.tab-content {          /* настройка галереи */
+    margin-bottom: 25px;
+}
+.gallery-body {
+    margin-left: -1.5%;
+}
+.thumbnail {
+    background: #f2f3ef;
+}
+.thumbnail .caption h3 {        /* подпись к картинке в галерее*/
+    font-family: 'Rancho', cursive;
+    color: #000;
+    background: rgba(255, 255, 255, 0.73);
+    padding: 10px 10px 5px 10px;
+    position: absolute;
+    bottom: 30%;
+    left: 4%;
+    border-top-right-radius: 15px;
+    border: 5px solid #f2f3ef;
+}
+.thumbnail p {
+    color: #6a6a6a;
+    text-align: justify;
+}
+
+
+/* Category */
 .container > .row {
     margin-top: 50px;
 }
-.category-1 {
+.category-1,
+.category-2{
     text-align: justify;
 }
 
 /* Spoiler */
 a.spoiler:after {
-    content: " [-]";
+    content: " [ - ]";
 }
 a.spoiler.collapsed:after {
-    content: " [+]";
+    content: " [ + ]";
 }
 .well {
     background: rgba(157, 157, 157, 0.16);
@@ -206,12 +260,18 @@ button.close:hover {
 .modal-header {
     border-bottom: 1px solid rgba(221, 221, 221, 0.25);
 }
+.modal-footer {
+    border-top: 1px solid rgba(221, 221, 221, 0.25);
+}
 
 
 /* @media */
 /* Lg devices, wide screens */
-@media only screen and (max-width: 1200px) {
-
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .thumbnail .caption h3 {        /* подпись к картинке в галерее*/
+        bottom: 38%;
+        left: 6%;
+    }
 }
 
 /* M devices, Desctops */
@@ -234,10 +294,63 @@ button.close:hover {
         color: #f1ebb6;
         background-color: rgba(244, 244, 244, 0.16);
     }
+    .thumbnail .caption h3 {        /* подпись к картинке в галерее*/
+        bottom: 13%;
+        left: 2%;
+    }
 }
 
-/* Xs devices, phones */
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 731px) {
+    .thumbnail .caption h3 {
+        bottom: 13.7%;
+        left: 2.5%;
+    }
+}
+@media only screen and (max-width: 657px) {
+    .thumbnail .caption h3 {
+        bottom: 14.5%;
+    }
+}
+@media only screen and (min-width: 630px) and (max-width: 636px) {
+    .thumbnail .caption h3 {
+        bottom: 18%;
+    }
+}
+@media only screen and (max-width: 629px) {
+    .thumbnail .caption h3 {
+        bottom: 19%;
+    }
+}
+@media only screen and (max-width: 597px) {
+    .thumbnail .caption h3 {
+        left: 3%;
+    }
+}
+@media only screen and (max-width: 542px) {
+    .thumbnail .caption h3 {
+        bottom: 21%;
+        left: 3.5%;
+    }
+}
+@media only screen and (max-width: 595px) {
+    .thumbnail .caption h3 {
+        bottom: 23%;
+    }
+}
+@media only screen and (max-width: 457px) {
+    .thumbnail .caption h3 {
+        bottom: 28%;
+    }
+}
+@media only screen and (max-width: 444px) {
+    .thumbnail .caption h3 {
+        bottom: 28%;
+        left: 4%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .thumbnail .caption h3 {
+        bottom: 30%;
+    }
 }
 
