@@ -24,355 +24,380 @@
     <![endif]-->
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50"> <!-- scroll spy -->
+    <body data-spy="scroll" data-target=".navbar" data-offset="50"> <!-- scroll spy -->
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top"> <!-- fixed-top = прокручивается | static-top = остается вверху страницы  -->
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">AB</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav links-left">
-                    <li><a href="#home">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Categories<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#category_1">Category-1</a></li>
-                            <li><a href="#category_2">Category-2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#contacts"><i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Header -->
-    <a id="home"></a>
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Landing page</h1>
-                        <h3>based on Bootstrap</h3>
-                    </div>
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top"> <!-- fixed-top = прокручивается | static-top = остается вверху страницы  -->
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">AB</a>
                 </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.header -->
 
-    <!-- Category-1 -->
-    <a id="category_1"></a>
-        <div class="category-1">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav links-left">
+                        <li><a href="#home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false">Categories<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#category_1">Category-1</a></li>
+                                <li><a href="#category_2">Category-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#contacts"><i class="fa fa-address-card-o" aria-hidden="true"></i> Contacts</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Header -->
+        <a id="home"></a>
+        <div class="intro-header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-
-                        <!-- Nav-tabs -->
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#article">Article</a></li>
-                            <li><a data-toggle="tab" href="#gallery">Gallery <span class="badge">6</span></a></li>
-                            <li class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                    Video
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a data-toggle="tab" href="#video1">Video 1</a></li>
-                                    <li><a data-toggle="tab" href="#video2">Video 2 <span class="label label-success">New</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content">
-                            <!-- Article -->
-                            <div id="article" class="tab-pane fade in active">
-                                <h3>Article</h3>
-                                <p>content</p>
-                            </div>
-                            <!-- ./article -->
-
-                            <!-- Gallery -->
-                            <div id="gallery" class="tab-pane fade">
-                                <div class="container gallery-body">
-                                        <div class="row clearfix">
-                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <div class="thumbnail">
-                                                <a href="img/gallery1.jpg" target="_blank"><img src="img/gallery1.jpg" alt="" /></a>
-                                                <div class="caption">
-                                                    <h3>Sedquis</h3>
-                                                    <p>Fusce lacinia, felis id sagittis volutpat semper felis in, condimentum ipsum. Fusce rutrum, augue
-                                                        quis consequat fringilla, ex tellus placerat libero, a viverra ipsum nisi id mauris
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <div class="thumbnail">
-                                                <a href="img/gallery2.jpg" target="_blank"><img src="img/gallery2.jpg" alt=""/></a>
-                                                <div class="caption">
-                                                    <h3>Dagitfon</h3>
-                                                    <p>Fringilla, ex tellus placerat libero, a viverra ipsum ni fusce lacinia, felis id sagittis volutpat semper felis in,
-                                                        condimentum ipsum. Fusce rutrum, augue quis consequat si id mauris.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <div class="thumbnail">
-                                                <a href="img/gallery3.jpg" target="_blank"><img src="img/gallery3.jpg" alt=""/></a>
-                                                <div class="caption">
-                                                    <h3>Fringilla</h3>
-                                                    <p> Quis consequat ausce rutrum, augue  fringilla, ex tellus placerat libero. condimentum ipsum., a viverra ipsum nisi id mauris fusce lacinia,
-                                                        felis id sagittis volutpat semper felis in.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <div class="thumbnail">
-                                                <a href="img/gallery4.jpg" target="_blank"><img src="img/gallery4.jpg" alt="" /></a>
-                                                <div class="caption">
-                                                    <h3>Hoppsoj</h3>
-                                                    <p>A viverra ipsum nisi id maurisn usce lacinia, felis id sagittis volutpat semper felis in, condimentum ipsum. Fusce rutrum, augue
-                                                        quis consequat fringilla, ex tellus placerat libero,
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <div class="thumbnail">
-                                                <a href="img/gallery5.jpg" target="_blank"><img src="img/gallery5.jpg" alt=""/></a>
-                                                <div class="caption">
-                                                    <h3>Winglo</h3>
-                                                    <p>Homog lopoou opur ringilla, ex tellus placerat libero, a viverra ipsum ni fusce lacinia, felis id sagittis volutpat semper felis in,
-                                                        condimentum ipsum. Semper consequat ausce rutrum, augue.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                            <div class="thumbnail">
-                                                <a href="img/gallery6.jpg" target="_blank"><img src="img/gallery6.jpg" alt=""/></a>
-                                                <div class="caption">
-                                                    <h3>Ripposat</h3>
-                                                    <p>Tamo id sagittis volutpat semper consequat ausce rutrum, augue  fringilla, ex tellus placerat libero. condimentum ipsum., a viverra ipsum nisi id mauris fusce lacinia,
-                                                        felis  felis in.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!-- ./row -->
-                                </div>
-                                <!-- ./container -->
-                            </div>
-                            <!-- ./#galley -->
-
-                            <!-- Video-1 -->
-                            <div id="video1" class="tab-pane fade">
-                                <h3>Video 1</h3>
-                                <p>content</p>
-                            </div>
-                            <!-- ./video-1 -->
-
-                            <!-- Video-2 -->
-                            <div id="video2" class="tab-pane fade">
-                                <h3>Video 2</h3>
-                                <p>content</p>
-                            </div>
-                            <!-- ./video-2 -->
-
+                        <div class="intro-message">
+                            <h1>Landing page</h1>
+                            <h3>based on Bootstrap</h3>
                         </div>
-                        <!-- ./nav-tabs -->
                     </div>
-                    <!-- ./col-lg-12 -->
                 </div>
-                <!-- ./row -->
             </div>
             <!-- /.container -->
         </div>
-        <!-- /.category-1 -->
+        <!-- /.header -->
 
-    <!-- Category-2 -->
-    <a id="category_2"></a>
-        <div class="container">
-            <div class="category-2">
-                <!-- carousel -->
-                <div id="carousel1" class="carousel slide">
-                    <!-- Индикаторы -->
-                    <ol class="carousel-indicators">
-                        <li class="active" data-target="#carousel1" data-slide-to="0"></li> <!-- data-slide = нумерация слайдов -->
-                        <li data-target="#carousel1" data-slide-to="1"></li>
-                    </ol>
-                    <!-- Слайды -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="img/slide_1.jpg" alt=""/>
-                            <div class="carousel-caption">
-                                <h2>Slide 1</h2>
-                                <p>some description goes here</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/slide_2.jpg" alt=""/>
-                            <div class="carousel-caption">
-                                <h2>Slide 2</h2>
-                                <p>some description goes here</p>
-                            </div>
+        <!-- Category-1 -->
+        <a id="category_1"></a>
+            <div class="container">
+                <div class="category-1">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <!-- Nav-tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#article">Article</a></li>
+                                <li><a data-toggle="tab" href="#gallery">Gallery <span class="badge">6</span></a></li>
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        Video
+                                        <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a data-toggle="tab" href="#video1">Video 1 <span class="label label-success">New</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Стрелки переключения слайдов -->
-                    <a class="left carousel-control" href="#carousel1" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel1" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    </a>
-                </div>
-                <!-- /.carousel -->
+                    <!-- /.row -->
 
-                <!-- Spoiler -->
-                <a href="#spoiler-1" data-toggle="collapse" class="btn btn-default btn-block spoiler collapsed">Spoiler</a>
-                <div class="collapse" id="spoiler-1">
-                    <div class="well">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt
-                            turpis risus, a scelerisque massa lacinia dictum. Sed tempus a justo in commodo.
-                            Nulla egestas risus eu velit pretium, malesuada vestibulum est interdum. Donec porta
-                            elementum erat ut lobortis. Quisque vestibulum sollicitudin rhoncus. Etiam interdum
-                            metus tellus, eu feugiat augue.
-                        </p>
-                    </div>
-                </div>
-                <!-- /.spoiler -->
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, metus at iaculis gravida,
-                    metus metus mattis mi, vitae tincidunt augue eros sit amet eros. Integer fermentum sapien ac vestibulum tristique.
-                    Sed condimentum pellentesque magna, sed iaculis tortor ultrices ac. Sed facilisis lorem id semper fermentum.
-                    Donec in mauris venenatis, semper felis in, condimentum ipsum. Fusce rutrum, augue quis consequat fringilla,
-                    ex tellus placerat libero, a viverra ipsum nisi id mauris. Aliquam non metus eget justo auctor venenatis vitae sit amet nibh.
-                    Maecenas cursus nulla vel mattis mollis. Curabitur augue sapien, accumsan eget ullamcorper nec, ultricies vel felis.
-                    Nam at nibh sit amet odio facilisis ornare interdum quis ex. Suspendisse velit felis, eleifend eget risus in, sollicitudin tincidunt mi.
-                    Duis hendrerit metus eget diam aliquam, in convallis felis dapibus. Vestibulum nec faucibus leo, ac viverra augue.
-                    Curabitur at volutpat augue. Proin pretium fringilla ligula, eu sagittis risus elementum nec. Vivamus sed semper ligula.
-                    Sed luctus quam vitae orci lacinia, et mollis velit posuere. Fusce rhoncus, sapien non convallis tempor, lacus nunc mattis neque,
-                    ac dapibus lacus ante sit amet nibh. Fusce sed ultricies nunc. Aliquam at elit nec leo semper dictum. Vestibulum mollis cursus
-                    diam non pellentesque. Sed quis lobortis risus. Fusce lacinia, felis id sagittis volutpat, mauris ipsum dictum augue, in
-                    vulputate urna metus eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Sed sed lorem eget nunc ornare convallis. Pellentesque ullamcorper lacus id ultrices interdum. In hac habitasse platea dictumst.
-                    Aenean quis est eget ipsum accumsan viverra. Sed mi augue, lobortis rhoncus volutpat vitae, placerat vitae libero.
-                    Duis varius pretium lobortis. Vestibulum placerat, nibh non porttitor dignissim, lacus lorem efficitur ligula, et tempus nunc justo
-                    pellentesque enim. Nam gravida, mi sit amet vulputate interdum, mi libero egestas ante, sit amet sodales orci ante ut leo.
-                    Donec in lectus id mauris egestas rhoncus. Nam auctor at lectus eget porttitor. Donec elementum varius nunc, vitae elementum sapien.
-                    Etiam est ipsum, vestibulum eu pretium quis, malesuada vitae est. Nulla semper suscipit neque, et elementum sem tincidunt in.
-                    Vivamus sagittis porttitor massa id iaculis. Cras dapibus ut ante sit amet congue. Vivamus vitae felis felis.
-                    Vivamus porttitor nunc tellus, feugiat convallis nisi accumsan ac. Nam ac elit dapibus, tempor arcu nec, condimentum ligula.
-                    Cras lobortis ultricies maximus. Pellentesque quis tortor euismod, lobortis turpis in, tristique quam. Etiam sapien turpis,
-                    ullamcorper nec venenatis ac, tempus pellentesque tortor. Quisque a arcu sit amet enim elementum fermentum laoreet sed magna.
-                    Sed id lacinia tellus. Phasellus vestibulum lacinia lectus. Maecenas ornare enim at dictum luctus. Nullam sed orci non enim
-                    pulvinar rutrum et tincidunt nunc. Maecenas magna ante, pulvinar nec consectetur ut, dignissim ac sapien.
-                    Quisque pulvinar augue urna, at ornare orci tempor eget. Integer ut felis arcu. Pellentesque laoreet, dui fringilla
-                    scelerisque pulvinar, orci leo eleifend mauris, a malesuada est ante sit amet nisi. Etiam sit amet consequat dui, pretium
-                    hendrerit massa. Donec iaculis magna vel augue efficitur faucibus. Suspendisse rutrum urna nec accumsan sollicitudin.
-                    Vestibulum interdum mollis finibus. Sed euismod vulputate massa sit amet cursus. Nunc massa mi, fermentum nec arcu eget,
-                    venenatis viverra nulla. Proin ac erat magna. Duis nisl enim, placerat quis metus id, porta facilisis diam. Mauris maximus
-                    pulvinar diam luctus consectetur. Fusce ac semper nisl. Donec accumsan aliquet nulla, ac pellentesque nunc porta id.
-                </p>
-
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-default btn-md m-window" data-toggle="modal" data-target="#myModal">
-                    ... and some more info
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel">Vestibulum vel pellentesque nunc</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>
-                                    Aliquam volutpat urna vitae lacus auctor varius id nec lectus. Curabitur tristique
-                                    purus molestie felis vulputate scelerisque. Etiam sit amet mi ut dolor consectetur ornare.
-                                    Nullam at ornare est. In eu dignissim magna. Integer ultricies elementum ex, tincidunt egestas arcu finibus quis.
-                                    Integer eget mattis nunc. Mauris sit amet ullamcorper velit. Phasellus in consectetur felis.
-                                    Nam est ante, hendrerit ac sodales eget, egestas ac velit. Vestibulum fermentum ex quis tempor tempor.
-                                    Vivamus mauris nulla, placerat non pretium eu, tempus eget neque. Sed vel sapien eu ipsum euismod aliquam.
-                                    Ut in tincidunt mi. Phasellus non lobortis quam. Donec at dolor sodales, congue justo sit amet, faucibus lorem.
-                                    <br/><br/>
-                                    Aliquam erat volutpat. Donec sit amet dui quis eros varius blandit. Donec a enim eget neque laoreet semper.
-                                    Fusce sed sem eu urna dignissim ultrices. Sed non consectetur lorem, eu gravida justo.
-                                    Proin efficitur molestie gravida. Vestibulum pharetra arcu ac molestie varius.
-                                    Duis at commodo massa, ut lacinia ipsum. Praesent in fermentum leo.
-                                    Aliquam eu erat eu tortor varius dignissim.
-                                </p>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
-                            </div>
+                    <div class="tab-content">
+                        <!-- Article -->
+                        <div id="article" class="tab-pane fade in active">
+                            <h3>Article</h3>
+                            <p>content</p>
                         </div>
+                        <!-- ./article -->
+
+                        <!-- Gallery -->
+                        <div id="gallery" class="tab-pane fade">
+                            <div class="gallery-body">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 clearfix">
+                                        <div class="thumbnail">
+                                            <a href="img/gallery1.jpg" target="_blank"><img src="img/gallery1.jpg" alt="" /></a>
+                                            <div class="caption">
+                                                <h3>Sedquis</h3>
+                                                <p>Fusce lacinia, felis id sagittis volutpat semper felis in, condimentum ipsum. Fusce rutrum, augue
+                                                    quis consequat fringilla, ex tellus placerat libero, a viverra ipsum nisi id mauris
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 clearfix">
+                                        <div class="thumbnail">
+                                            <a href="img/gallery2.jpg" target="_blank"><img src="img/gallery2.jpg" alt=""/></a>
+                                            <div class="caption">
+                                                <h3>Dagitfon</h3>
+                                                <p>Fringilla, ex tellus placerat libero, a viverra ipsum ni fusce lacinia, felis id sagittis volutpat semper felis in,
+                                                    condimentum ipsum. Fusce rutrum, augue quis consequat si id mauris.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 clearfix">
+                                        <div class="thumbnail">
+                                            <a href="img/gallery3.jpg" target="_blank"><img src="img/gallery3.jpg" alt=""/></a>
+                                            <div class="caption">
+                                                <h3>Fringilla</h3>
+                                                <p> Quis consequat ausce rutrum, augue  fringilla, ex tellus placerat libero. condimentum ipsum., a viverra ipsum nisi id mauris fusce lacinia,
+                                                    felis id sagittis volutpat semper felis in.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 clearfix">
+                                        <div class="thumbnail">
+                                            <a href="img/gallery4.jpg" target="_blank"><img src="img/gallery4.jpg" alt="" /></a>
+                                            <div class="caption">
+                                                <h3>Hoppsoj</h3>
+                                                <p>A viverra ipsum nisi id maurisn usce lacinia, felis id sagittis volutpat semper felis in, condimentum ipsum. Fusce rutrum, augue
+                                                    quis consequat fringilla, ex tellus placerat libero,
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 clearfix">
+                                        <div class="thumbnail">
+                                            <a href="img/gallery5.jpg" target="_blank"><img src="img/gallery5.jpg" alt=""/></a>
+                                            <div class="caption">
+                                                <h3>Winglo</h3>
+                                                <p>Homog lopoou opur ringilla, ex tellus placerat libero, a viverra ipsum ni fusce lacinia, felis id sagittis volutpat semper felis in,
+                                                    condimentum ipsum. Semper consequat ausce rutrum, augue.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 clearfix">
+                                        <div class="thumbnail">
+                                            <a href="img/gallery6.jpg" target="_blank"><img src="img/gallery6.jpg" alt=""/></a>
+                                            <div class="caption">
+                                                <h3>Ripposat</h3>
+                                                <p>Tamo id sagittis volutpat semper consequat ausce rutrum, augue  fringilla, ex tellus placerat libero. condimentum ipsum., a viverra ipsum nisi id mauris fusce lacinia,
+                                                    felis  felis in.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./row -->
+                            </div>
+                            <!-- ./gallery-body -->
+                        </div>
+                        <!-- ./#galley -->
+
+                        <!-- Video-1 -->
+                        <div id="video1" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>- Ultra rare butterfly -</h2>
+
+                                <div class="col-md-6 col-md-6">
+                                    <div class="embed-responsive embed-responsive-16by9 video1-frame">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7iZmjcbmrmQ" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim lorem, fringilla vitae tellus vel, lacinia congue purus.
+                                        In sed viverra leo. Sed pretium metus nec ligula consectetur, eget dictum massa gravida. Quisque augue urna, pharetra at blandit a,
+                                        luctus quis massa. Fusce eu arcu augue. In placerat lacus egestas lorem porttitor, vitae imperdiet dolor pulvinar. Ut vel ipsum viverra,
+                                        volutpat tortor vitae, tempus velit. Suspendisse dictum porta vulputate. Sed eu est nec quam euismod mattis. Proin molestie a lorem interdum viverra.
+                                        Duis tincidunt iaculis leo, sed aliquam justo scelerisque sed. Quisque ac aliquam felis. Aliquam iaculis lacus quis velit sollicitudin,
+                                        nec sagittis elit dapibus. Ut justo tellus, lobortis ac tincidunt sed, pharetra nec sem. Phasellus vehicula odio libero, ut venenatis tellus efficitur vel.
+                                        Mauris dolor diam, rutrum quis leo vitae, eleifend viverra quam. Vestibulum eleifend, ante nec facilisis eleifend, tortor lacus aliquam libero, quis
+                                        venenatis justo felis vel tortor. Maecenas ornare, est ut aliquet aliquam, sapien diam suscipit magna, id interdum nibh orci non risus. Donec porttitor
+                                        libero dolor, et rhoncus odio dapibus in. Nam auctor id lacus sodales bibendum. Fusce eu urna ac nisl condimentum eleifend. Duis fermentum dignissim neque
+                                        a mollis. Integer ullamcorper ipsum non nisl interdum cursus. Nulla at velit nec dui dictum rutrum non vitae justo. Quisque dignissim erat nec tellus consequat
+                                        tristique. Quisque porttitor quis lorem ut cursus. Vestibulum gravida ut velit in porttitor. Aenean aliquet quis ex non convallis. Vivamus volutpat neque gravida
+                                        magna lobortis, non vestibulum turpis suscipit. Pellentesque ligula metus, viverra sit amet pulvinar tempus, iaculis eu dui. In iaculis urna ut luctus gravida.
+                                        Suspendisse et tristique tortor. Pellentesque eget est vitae metus tempor convallis. Quisque imperdiet mauris nec efficitur faucibus. Quisque ornare massa consectetur
+                                        neque dictum fringilla. Proin mauris urna, dictum vitae. Phasellus lacinia nunc lacus, quis interdum eros efficitur ut. Pellentesque dictum tempor efficitur.
+                                        Integer vitae lectus nec tortor volutpat tristique. Quisque ullamcorper convallis erat. Etiam accumsan fermentum sagittis. Phasellus dignissim venenatis interdum.
+                                        Fusce vitae tortor eu orci pellentesque finibus. Nulla a ante velit. Nulla facilisi. Nunc placerat euismod nibh. Morbi volutpat nulla efficitur magna pharetra pharetra.
+                                        In hac habitasse platea dictumst. Phasellus egestas felis tristique imperdiet euismod. Quisque eu porttitor ligula. Quisque lacinia fringilla mi sed commodo.
+                                        Vestibulum a tortor eget mauris elementum sodales sit amet sit amet justo. Suspendisse justo ipsum, ultrices ac ex ac, pellentesque vehicula lorem.
+                                        Quisque sodales felis et faucibus rhoncus. Quisque eget neque ut risus vehicula venenatis ut a leo. Nullam eu mi arcu. Aliquam aliquet, diam sed eleifend blandit,
+                                        orci odio placerat arcu, vitae varius sapien orci eget nisl. Suspendisse potenti. Donec finibus elit non velit dictum ultricies. Nunc dapibus nisl augue, auctor
+                                        mattis massa feugiat vitae. Integer finibus consectetur gravida. Nullam consequat imperdiet molestie. Aliquam vel sem sed tortor facilisis accumsan.
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi nec posuere mi, venenatis tempus nibh. Nunc
+                                        bibendum ipsum nec ullamcorper feugiat. Vivamus id purus id erat egestas pharetra. Phasellus in diam massa. Morbi maximus condimentum lacus, pharetra
+                                        dignissim mi. Cras in felis egestas, finibus velit tristique, auctor urna. Fusce malesuada dapibus erat non interdum. Nulla velit dolor, lobortis quis
+                                        felis eget, convallis sagittis libero. Aliquam erat volutpat. Maecenas et consequat lorem. Sed faucibus erat dolor, ut blandit libero rutrum a.
+                                        Donec et dolor gravida, pulvinar nisl non, tempus turpis. Quisque maximus vel urna vitae tempus. Fusce sed enim ligula. Suspendisse porttitor diam diam,
+                                        eget maximus odio feugiat sit amet. Morbi orci ante, fermentum nec tortor ac, dapibus condimentum enim.
+                                    </p>
+
+                            </div>
+                            <!-- ./row -->
+                        </div>
+                        </div>
+                        <!-- ./#video-1 -->
                     </div>
+                    <!-- /.tab-content -->
                 </div>
-                <!-- ./modal -->
+                <!-- /.category-1 -->
 
-            </div>
-            <!-- /.category-2 -->
-        </div>
-        <!-- /.container -->
 
-    <!-- Contacts-->
-    <a id="contacts"></a>
-        <div class="container">
-            <div class="contact">
-                <div class="row">
+            <!-- Category-2 -->
+            <a id="category_2"></a>
+                <div class=" row category-2">
                     <div class="col-lg-12">
-
+                    <!-- carousel -->
+                    <div id="carousel1" class="carousel slide">
+                        <!-- Индикаторы -->
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#carousel1" data-slide-to="0"></li> <!-- data-slide = нумерация слайдов -->
+                            <li data-target="#carousel1" data-slide-to="1"></li>
+                        </ol>
+                        <!-- Слайды -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/slide_1.jpg" alt=""/>
+                                <div class="carousel-caption">
+                                    <h2>Slide 1</h2>
+                                    <p>some description goes here</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/slide_2.jpg" alt=""/>
+                                <div class="carousel-caption">
+                                    <h2>Slide 2</h2>
+                                    <p>some description goes here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Стрелки переключения слайдов -->
+                        <a class="left carousel-control" href="#carousel1" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel1" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
                     </div>
+                    <!-- /.carousel -->
+
+                    <!-- Spoiler -->
+                    <a href="#spoiler-1" data-toggle="collapse" class="btn btn-default btn-block spoiler collapsed">Spoiler</a>
+                    <div class="collapse" id="spoiler-1">
+                        <div class="well">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt
+                                turpis risus, a scelerisque massa lacinia dictum. Sed tempus a justo in commodo.
+                                Nulla egestas risus eu velit pretium, malesuada vestibulum est interdum. Donec porta
+                                elementum erat ut lobortis. Quisque vestibulum sollicitudin rhoncus. Etiam interdum
+                                metus tellus, eu feugiat augue.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- /.spoiler -->
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla, metus at iaculis gravida,
+                        metus metus mattis mi, vitae tincidunt augue eros sit amet eros. Integer fermentum sapien ac vestibulum tristique.
+                        Sed condimentum pellentesque magna, sed iaculis tortor ultrices ac. Sed facilisis lorem id semper fermentum.
+                        Donec in mauris venenatis, semper felis in, condimentum ipsum. Fusce rutrum, augue quis consequat fringilla,
+                        ex tellus placerat libero, a viverra ipsum nisi id mauris. Aliquam non metus eget justo auctor venenatis vitae sit amet nibh.
+                        Maecenas cursus nulla vel mattis mollis. Curabitur augue sapien, accumsan eget ullamcorper nec, ultricies vel felis.
+                        Nam at nibh sit amet odio facilisis ornare interdum quis ex. Suspendisse velit felis, eleifend eget risus in, sollicitudin tincidunt mi.
+                        Duis hendrerit metus eget diam aliquam, in convallis felis dapibus. Vestibulum nec faucibus leo, ac viverra augue.
+                        Curabitur at volutpat augue. Proin pretium fringilla ligula, eu sagittis risus elementum nec. Vivamus sed semper ligula.
+                        Sed luctus quam vitae orci lacinia, et mollis velit posuere. Fusce rhoncus, sapien non convallis tempor, lacus nunc mattis neque,
+                        ac dapibus lacus ante sit amet nibh. Fusce sed ultricies nunc. Aliquam at elit nec leo semper dictum. Vestibulum mollis cursus
+                        diam non pellentesque. Sed quis lobortis risus. Fusce lacinia, felis id sagittis volutpat, mauris ipsum dictum augue, in
+                        vulputate urna metus eu purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Sed sed lorem eget nunc ornare convallis. Pellentesque ullamcorper lacus id ultrices interdum. In hac habitasse platea dictumst.
+                        Aenean quis est eget ipsum accumsan viverra. Sed mi augue, lobortis rhoncus volutpat vitae, placerat vitae libero.
+                        Duis varius pretium lobortis. Vestibulum placerat, nibh non porttitor dignissim, lacus lorem efficitur ligula, et tempus nunc justo
+                        pellentesque enim. Nam gravida, mi sit amet vulputate interdum, mi libero egestas ante, sit amet sodales orci ante ut leo.
+                        Donec in lectus id mauris egestas rhoncus. Nam auctor at lectus eget porttitor. Donec elementum varius nunc, vitae elementum sapien.
+                        Etiam est ipsum, vestibulum eu pretium quis, malesuada vitae est. Nulla semper suscipit neque, et elementum sem tincidunt in.
+                        Vivamus sagittis porttitor massa id iaculis. Cras dapibus ut ante sit amet congue. Vivamus vitae felis felis.
+                        Vivamus porttitor nunc tellus, feugiat convallis nisi accumsan ac. Nam ac elit dapibus, tempor arcu nec, condimentum ligula.
+                        Cras lobortis ultricies maximus. Pellentesque quis tortor euismod, lobortis turpis in, tristique quam. Etiam sapien turpis,
+                        ullamcorper nec venenatis ac, tempus pellentesque tortor. Quisque a arcu sit amet enim elementum fermentum laoreet sed magna.
+                        Sed id lacinia tellus. Phasellus vestibulum lacinia lectus. Maecenas ornare enim at dictum luctus. Nullam sed orci non enim
+                        pulvinar rutrum et tincidunt nunc. Maecenas magna ante, pulvinar nec consectetur ut, dignissim ac sapien.
+                        Quisque pulvinar augue urna, at ornare orci tempor eget. Integer ut felis arcu. Pellentesque laoreet, dui fringilla
+                        scelerisque pulvinar, orci leo eleifend mauris, a malesuada est ante sit amet nisi. Etiam sit amet consequat dui, pretium
+                        hendrerit massa. Donec iaculis magna vel augue efficitur faucibus. Suspendisse rutrum urna nec accumsan sollicitudin.
+                        Vestibulum interdum mollis finibus. Sed euismod vulputate massa sit amet cursus. Nunc massa mi, fermentum nec arcu eget,
+                        venenatis viverra nulla. Proin ac erat magna. Duis nisl enim, placerat quis metus id, porta facilisis diam. Mauris maximus
+                        pulvinar diam luctus consectetur. Fusce ac semper nisl. Donec accumsan aliquet nulla, ac pellentesque nunc porta id.
+                    </p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-default btn-md m-window" data-toggle="modal" data-target="#myModal">
+                        ... and some more info
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="myModalLabel">Vestibulum vel pellentesque nunc</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Aliquam volutpat urna vitae lacus auctor varius id nec lectus. Curabitur tristique
+                                        purus molestie felis vulputate scelerisque. Etiam sit amet mi ut dolor consectetur ornare.
+                                        Nullam at ornare est. In eu dignissim magna. Integer ultricies elementum ex, tincidunt egestas arcu finibus quis.
+                                        Integer eget mattis nunc. Mauris sit amet ullamcorper velit. Phasellus in consectetur felis.
+                                        Nam est ante, hendrerit ac sodales eget, egestas ac velit. Vestibulum fermentum ex quis tempor tempor.
+                                        Vivamus mauris nulla, placerat non pretium eu, tempus eget neque. Sed vel sapien eu ipsum euismod aliquam.
+                                        Ut in tincidunt mi. Phasellus non lobortis quam. Donec at dolor sodales, congue justo sit amet, faucibus lorem.
+                                        <br/><br/>
+                                        Aliquam erat volutpat. Donec sit amet dui quis eros varius blandit. Donec a enim eget neque laoreet semper.
+                                        Fusce sed sem eu urna dignissim ultrices. Sed non consectetur lorem, eu gravida justo.
+                                        Proin efficitur molestie gravida. Vestibulum pharetra arcu ac molestie varius.
+                                        Duis at commodo massa, ut lacinia ipsum. Praesent in fermentum leo.
+                                        Aliquam eu erat eu tortor varius dignissim.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./modal -->
                 </div>
             </div>
-            <!-- /.contacts -->
-        </div>
-        <!-- /.container -->
+            <!-- /.row, category-2 -->
+
+            <!-- Contacts-->
+            <a id="contacts"></a>
+                <div class="contact">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /.contacts -->
+            </div>
+            <!-- /.container -->
 
 
-    <!-- jQuery -->
-    <script src="js/jquery-3.1.1.js"></script>
+        <!-- jQuery -->
+        <script src="js/jquery-3.1.1.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom JavaScript -->
-    <script src="js/index.js"></script>
-</body>
+        <!-- Custom JavaScript -->
+        <script src="js/index.js"></script>
+    </body>
 </html>
