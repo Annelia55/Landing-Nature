@@ -157,6 +157,9 @@ img {border: none;}
 }
 
 /* Nav-tabs */
+.tab-back {
+    background-color: #FFFFFF;
+}
 .tab-content {
     margin-bottom: 45px;
 }
@@ -206,6 +209,35 @@ img {border: none;}
 .tab-content {
     margin-top: 25px;
 }
+
+/* Nav-tabs => Info */
+.info-img {
+    max-width: 97%;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+}
+.personal_info {
+    text-align: center;
+}
+.info-description {
+    text-align: justify;
+    background-color: #1b1c1a;
+    padding: 10px;
+    border-radius: 7px;
+}
+.info_main_body {
+    margin-top: 3%;
+}
+.info-img-main {
+    max-width: 95%;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+}
+.personal_info_main {
+    text-align: center;
+}
+
 
 /* Nav-tabs => Gallery */
 .thumbnail {
@@ -260,10 +292,12 @@ img {border: none;}
 
 /* Spoiler */
 a.spoiler:after {
-    content: " [ - ]";
+    content: " \f056";          /* [ - ] */
+    font-family: "FontAwesome"; /* обязательно! иначе иконка не отобразится */
 }
 a.spoiler.collapsed:after {
-    content: " [ + ]";
+    content: " \f055";          /* [ + ] */
+    font-family: "FontAwesome";
 }
 .well {
     background: rgba(157, 157, 157, 0.16);
