@@ -161,7 +161,7 @@ img {border: none;}
     background-color: #FFFFFF;
 }
 .tab-content {
-    margin-bottom: 45px;
+    margin: 40px 0 45px 0;
 }
 .nav-tabs {
     border-bottom: 1px solid rgba(221, 221, 221, 0.58);
@@ -206,15 +206,11 @@ img {border: none;}
 .dropdown-menu > .active > a:focus {
     background-color: rgba(0, 0, 0, 0.51);
 }
-.tab-content {
-    margin-top: 25px;
-}
 
 /* Nav-tabs => Info */
 .info-img {
     max-width: 97%;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
     text-align: center;
 }
 .personal_info {
@@ -232,7 +228,7 @@ img {border: none;}
 .info-img-main {
     max-width: 95%;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
+    margin-top: 5%
 }
 .personal_info_main {
     text-align: center;
@@ -241,27 +237,29 @@ img {border: none;}
 
 /* Nav-tabs => Gallery */
 .thumbnail {
-    background: #f2f3ef;
+    background-color: #1b1c1a;
     border-radius: 7px;
+    border: none;
 }
 .thumbnail img {
     border-radius: 7px;
 }
 .thumbnail .caption h3 {        /* подпись к картинке в галерее*/
     font-family: 'Rancho', cursive;
-    color: #000;
-    background: rgba(255, 255, 255, 0.73);
+    color: #898989;
+    background-color: #000000;
     padding: 10px 10px 5px 10px;
     position: absolute;
     bottom: 30%;
     left: 4%;
     border-top-right-radius: 15px;
-    border: 5px solid #f2f3ef;
+    border: 5px solid #1b1c1a;;
 }
 .thumbnail p {
-    color: #2c2c2c;
+    color: #898989;
     text-align: justify;
 }
+
 
 /* Video */
 #video1 {
@@ -271,7 +269,6 @@ img {border: none;}
 #video1 h2 {
     position: relative;
     left: 61%;
-    color: #d6d09c;
 }
 #video1 p {
     padding: 15px;
@@ -353,6 +350,12 @@ button.close:hover {
 
 }
 
+@media only screen and (min-width: 768px) {
+    .show-small {
+        display: none;
+    }
+}
+
 /* Sm devices, tablets */
 @media only screen and (max-width: 767px) {
     /* Collapse */
@@ -372,12 +375,24 @@ button.close:hover {
         bottom: 13%;
         left: 2%;
     }
+    .disappear {        /* nav-tabs-info - исчезает блок о фотографе */
+        display: none;
+    }
+    .personal_info img {
+        margin-top: 20px;
+    }
+    .info-img-main {
+        max-width: 70%;
+    }
 }
 
 @media only screen and (max-width: 731px) {
     .thumbnail .caption h3 {
         bottom: 13.7%;
         left: 2.5%;
+    }
+    .disappear {
+        display: none;
     }
 }
 @media only screen and (max-width: 657px) {
